@@ -1,0 +1,49 @@
+(export (version D)
+  (design
+    (source /home/ajohnson/Documents/kicad_test/kicad_projects/derbymakers_badge/derbymakers_badge.sch)
+    (date "Mon 23 Sep 2013 15:55:30 BST")
+    (tool "eeschema (2013-02-02 BZR 3928)-testing"))
+  (components
+    (comp (ref BT1)
+      (value BATTERY)
+      (libsource (lib device) (part BATTERY))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 524055A7))
+    (comp (ref D1)
+      (value LED)
+      (libsource (lib device) (part LED))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 524055DB)))
+  (libparts
+    (libpart (lib device) (part BATTERY)
+      (fields
+        (field (name Reference) BT)
+        (field (name Value) BATTERY))
+      (pins
+        (pin (num 1) (name +) (type passive))
+        (pin (num 2) (name -) (type passive))))
+    (libpart (lib device) (part LED)
+      (footprints
+        (fp LED-3MM)
+        (fp LED-5MM)
+        (fp LED-10MM)
+        (fp LED-0603)
+        (fp LED-0805)
+        (fp LED-1206)
+        (fp LEDV))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) LED))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive)))))
+  (libraries
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib)))
+  (nets
+    (net (code 1) (name "")
+      (node (ref BT1) (pin 1))
+      (node (ref D1) (pin 1)))
+    (net (code 2) (name "")
+      (node (ref BT1) (pin 2))
+      (node (ref D1) (pin 2)))))

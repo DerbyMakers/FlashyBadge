@@ -1,0 +1,17 @@
+Cmp-Mod V01 Created by CvPcb (2013-02-02 BZR 3928)-testing date = Mon 23 Sep 2013 20:04:38 BST
+
+BeginCmp
+TimeStamp = /524055A7;
+Reference = BT1;
+ValeurCmp = BATTERY;
+IdModule  = CR2032_CLIP_BACK;
+EndCmp
+
+BeginCmp
+TimeStamp = /524055DB;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+EndListe
